@@ -20,13 +20,13 @@ class TestPositions(unittest.TestCase):
 
     def setUp(self):
         self.position = factories.PositionFactory(
-        	title='Position Foo')
+        	title='Page Header')
 
-    def test_title_is_foo(self):
-        self.assertEqual(self.position.title, 'Position Foo')
+    def test_title_is_page_header(self):
+        self.assertEqual(self.position.title, 'Page Header')
 
-    def test_slug_is_foo(self):
-        self.assertEqual(self.position.slug, 'position-foo')
+    def test_slug_is_page_header(self):
+        self.assertEqual(self.position.slug, 'page-header')
 
     def tearDown(self):
         pass

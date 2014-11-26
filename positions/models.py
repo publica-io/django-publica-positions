@@ -2,7 +2,7 @@
 
 from django.db import models
 
-from entropy.base import EnabledMixin, SlugUniqueMixin, TitleMixin
+from entropy.mixins import EnabledMixin, SlugUniqueMixin, TitleMixin
 
 
 class Position(EnabledMixin, SlugUniqueMixin, TitleMixin):
@@ -35,4 +35,7 @@ class Position(EnabledMixin, SlugUniqueMixin, TitleMixin):
     # slug
     # enabled
     
-    pass
+    
+    class Meta:
+        verbose_name = 'Page Position'
+        verbose_name_plural = 'Page Positions for rendering Page Content Views'
