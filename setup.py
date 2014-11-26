@@ -26,7 +26,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 setup(
     name='django-publica-positions',
     version=version,
-    description=""""Template positions to show content"""",
+    description='Template positions to show content',
     long_description=readme + '\n\n' + history,
     author='Daryl Antony',
     author_email='daryl@commoncode.com.au',
